@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="Windows-31J"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+<servlet>
+<servlet-name>inputoutput</servlet-name>
+<servlet-class>pack1.InputOutputServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>inputoutput</servlet-name>
+<url-pattern>/inputoutput</url-pattern>
+</servlet-mapping>
+</web-app>
