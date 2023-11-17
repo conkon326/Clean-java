@@ -1,0 +1,27 @@
+/*
+注1: 1910年1月1日以前は正確に計算できません。
+注2: 必要なクラスをインポートしてください。
+*/
+
+int year=◆入力年◆
+int month=◆入力月◆
+int day=◆入力日◆
+
+Calendar cal1 = Calendar.getInstance();
+cal1.set(1910,0,1);
+long date1 = cal1.getTimeInMillis();
+
+Calendar cal2 = Calendar.getInstance();
+cal2.set(year,month-1,1);
+long date2 = cal2.getTimeInMillis();
+
+long distance = (date2 - date1) / (1000*60*60*24);
+int kansan = (int)(distance+2)%60;
+
+int ◆60分類の値◆ = (kansan+day);
+if(◆60分類の値◆ > 60){
+  ◆60分類の値◆ = ◆60分類の値◆-60;
+}
+
+
+
